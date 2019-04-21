@@ -21,3 +21,13 @@
 }
 
 @import "Nav/nav.scss";
+
+@media (max-width: $large) {
+    .header {
+        margin-left: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+}
