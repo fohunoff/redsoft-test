@@ -12,6 +12,7 @@
     background-position: top center;
 
     z-index: 1;
+    overflow: hidden;
 
     &::after {
         position: absolute;
@@ -34,7 +35,7 @@
     flex-direction: row;
     min-width: 100%;
 
-    overflow: hidden;
+    transition: transform 2s;
 }
 
 .slide {

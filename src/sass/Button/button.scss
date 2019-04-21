@@ -1,6 +1,7 @@
 .button {
     @include button-reset();
     
+    margin-bottom: 5px;
     padding: 20px 35px;
     
     color: white;
@@ -17,12 +18,24 @@
 .button--red {
     font-weight: bold;
     background-color: $red;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 8px gray;
+    }
 }
 
 
 @media (max-width: $large) {
     .button--toggle-menu {
         position: relative;
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
         
         &::before,
         &::after {

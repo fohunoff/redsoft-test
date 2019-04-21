@@ -9,6 +9,10 @@
 .menu__item {
     margin-right: 50px;
 
+    &:hover {
+        border-bottom: 1px solid white;
+    }
+
     .menu__link {
         color: white;
         font-weight: bold;
