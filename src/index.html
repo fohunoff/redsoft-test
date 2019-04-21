@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/style.min.css">
+    
     <title>Document</title>
 </head>
-<body>
+<body class="body">
+    <header class="header container">
+        <div class="logo">
+            <h1 class="header__title">Моё здоровье. Программа доступного лечения.</h1>
+            <img src="img/logo.png" alt="Моё здоровье. Программа доступного лечения.">
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#">О сервисе</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Функции</a></li>
+                <li class="menu__item"><a class="menu__link menu__link--active" href="#">Возможности</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Партнёры</a></li>
+            </ul>
+            <button class="button button--blue-border" type="button">Оставить заявку</button>
+        </nav>
+    </header>
     
+    <main>
+        <section class="slider">
+            <div class="slider__body">
+                <div class="slide">
+                    <div class="slide__body">
+                        <p class="slide__title">Расширяем возможности предоставления качественных медицинских услуг</p>
+                        <p class="slide__text">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».</p>
+                    </div>
+                    <button class="button button--red" type="button">Узнать больше</button>
+                </div>
+                
+                <div class="slide">
+                    <div class="slide__body">
+                        <p class="slide__title">Расширяем возможности предоставления качественных медицинских услуг</p>
+                        <p class="slide__text">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».</p>
+                    </div>
+                    <button class="button button--red" type="button">Узнать больше</button>
+                </div>
+            </div>
+            
+            <div class="handler">
+                <ul class="handler__list">
+                    <li class="handler__item handler__item--active"></li>
+                    <li class="handler__item"></li>
+                </ul>
+            </div>
+            
+            <svg class="slider__svg-clipper" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M 0 0, Q 50 150, 100 0, L 100 100, L 0 100" />
+            </svg>
+        </section>
+        
+        <section class="introduction">
+            <div class="introduction__mockup">
+                <img src="img/mockup-mobile.png" alt="Прототип мобильного приложения «Моё здоровье»">
+            </div>
+            <div class="introduction__text">
+                <h1>Что такое «Дневник здоровья»?</h1>
+                <p>Дневник пациента — это удобный онлайн-сервис:</p>
+                <ul class="introduction__list">
+                    <li class="introduction__item">Вносите результаты измерений вручную или с помощью интегрированных приборов</li>
+                    <li class="introduction__item">Ведите персональную медицинскую карту с историей ваших измерений </li>
+                    <li class="introduction__item">Делитесь результатами измерений со специалистами для повышения эффективности лечения</li>
+                    <li class="introduction__item">Получайте рекомендации, созданные специально для вас</li>
+                </ul>
+                <button class="button button--red" type="button">Оставить заявку</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
+<div</div>

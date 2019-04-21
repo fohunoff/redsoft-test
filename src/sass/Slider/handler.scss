@@ -1,0 +1,39 @@
+
+.handler {
+    position: absolute;
+    content: '';
+
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 8px;
+    border: 1px solid $blue--border;
+}
+
+.handler__list {
+    @include list-reset();
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 4px;
+    
+
+    .handler__item {
+        width: 16px;
+        height: 1px;
+        margin: 6px;
+
+        background-color: white;
+
+        opacity: 0.5;
+        transition: opacity 0.5s;
+    }
+
+    .handler__item--active {
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+        
+}

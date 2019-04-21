@@ -1,0 +1,32 @@
+.menu {
+    @include list-reset();
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu__item {
+    margin-right: 50px;
+
+    .menu__link {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu__link--active {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '•';
+            
+            bottom: -15px;
+            left: 0;
+            width: 100%;
+
+            transform: translateX(50%);
+        }
+    }
+}

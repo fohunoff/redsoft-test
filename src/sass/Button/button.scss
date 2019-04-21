@@ -1,0 +1,20 @@
+.button {
+    @include button-reset();
+    
+    padding: 20px 35px;
+    
+    color: white;
+    border-radius: 25px;
+}
+
+.button--blue-border {
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $blue--border;
+}
+
+.button--red {
+    font-weight: bold;
+    background-color: $red;
+}
